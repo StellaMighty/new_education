@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body {
+  font-family: serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 1.2rem;
+}
+/* _________HEADER / NAV____________ */
+header {
+  /* background: #007BFF; */
+  /* color: white; */
+  padding: 1rem 0;
+  text-align: center;
+}
+header nav a {
+  margin: 0 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+header nav {
+    display: flex;
+
+}
+.nav__container {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__container img {
+    width: 120px;
+    height: 120px;
+}
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+footer {
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+/* ************GENERAL STYLES********** */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.btn{
+    display: inline-block;
+    /* background: var(--color-white); */
+    /* color: var(--color-black); */
+    padding: 0.5rem 1rem;
+    /* border: 1px solid black; */
+    font-weight: 500;
+    transition: all 400ms ease;
+    border-radius: 1.5rem;
+}
+.btn-login{
+    color: #6AB3F7;
+    border: 1px solid #6AB3F7;  
+}
+.btn-signup{
+    color: rgb(255, 255, 255);
+    background-color: #FF4F4F;
+    /* border: 1px solid #6AB3F7;   */
+}
+
+/* ************HEADER*********** */
+header {
+    /* position: relative;
+    top: 5rem; */
+    /* height: 70vh; */
+    /* overflow: hidden; */
+    /* margin-bottom: 5rem; */
+    /* background-image: url('/images/bg3.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    /* background-color: rgb(157, 255, 0); */
+
+}
+
+.header__left h1{
+    margin-top: 1.5rem;
+    /* align-items: flex-start; */
+    font-size: 4.5rem;
+    font-family: "Josefin Sans", serif;
+    color: #FF4F4F;
+    /* color: #F76A6A   a bilt lighter; */
+    /* color: black; */
+}
+.header__left p {
+    margin: 1rem 0 2.4rem;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+
+    /* font-family: "Playwrite DE Grund", serif; */
+}
+.header__left a {
+    margin-bottom: 2.5rem;
+}
+.header__right-image img {
+    width: 80%;
+    margin-left: 8rem;
+
+    /* background-color: red; */
+}
+/* ********DIVIDER******* */
+#divider {
+    background-color: #FF4F4F;
+    padding: 0;
+    color: white;
+    font-weight: 700;
+    display: none;
+
+}
+.skillsstack {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    /* margin-left: -2rem;
+    margin-right: -2rem; */
+}
+.skill_logo img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+/* **************COURSES************** */
+.courses, .showcase {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .course, .project {
+    background: rgb(243, 78, 78);
+    color: rgb(252, 251, 251);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    max-height: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .course:nth-child(2){
+    background: blue;
+}
+.course:nth-child(3){
+    background: green;
+}
+.course:nth-child(4){
+    background: gray;
+}
+.course:nth-child(5){
+    background: orangered;
+}
+.course:nth-child(6){
+    background: rgb(104, 245, 186);
+}
+.course:nth-child(7){
+    background: rgb(245, 88, 237);
+}
+.course:nth-child(8){
+    background: rgb(255, 8, 70);
+}
+  button {
+    padding:0.4rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  .course_image img{
+    width: 15.2rem;
+    height: 10.2rem;
+    border-radius: 10px;
+}
