@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
+});
+
 const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarCollapse = document.getElementById('navbarNav');
 
