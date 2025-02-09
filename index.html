@@ -10,40 +10,70 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<!-- AOS LINKS BELOW -->
+ <!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   <link rel="stylesheet" href="styles.css">
-  <title>WebDevPro Training</title>
+  <title>WebDevPro Trainings</title>
 
 </head>
 <body>
-  <header>
+  <header class="container">
     <!-- <h1>WebDevPro Training</h1> -->
-    <nav>
-        <div class="container nav__container">
-            <div class="logo "><img src="images/transparent-wireless-network-wireless-internet-sci-fi-futurist-646586f2d30917.5111822216843752828644.png" alt=""></div>
-            <div class="nav_menu">
-                <a href="#about">About Us</a>
-                <a href="#courses">Courses</a>
-                <a href="#showcase">Showcase</a>
-                <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container nav__container ">
+            <a href="#" class="navbar-brand"><div class="logo "><img src="images/transparent-wireless-network-wireless-internet-sci-fi-futurist-646586f2d30917.5111822216843752828644.png" alt="school house logo"></div></a>
+
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav_menu collapse navbar-collapse " id="navbarNav">
+
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <a href="#about" class="nav-link" ><li class="nav-item">About Us</li></a>
+
+                <a href="#courses" class="nav-link " ><li class="nav-item">Courses</li></a>
+
+
+                <a href="#showcase" class="nav-link" ><li class="nav-item">Showcase</li></a>
+
+                <a href="#contact" class="nav-link " ><li class="nav-item" >Contact</li></a>
+              </ul>
+
+              <div class="register_menu d-flex ">
+                <a href="#" class="btn btn-login ">Login</a>
+                <a href="#" class="btn btn-signup ">Sign Up</a>
             </div>
-            <div class="register_menu">
-                <a href="#" class="btn btn-login">Login</a>
-                <a href="#" class="btn btn-signup">Sign Up</a>
+              
             </div>
+
+              <!-- <div><a href="#about" >About Us</a></div>
+              <div><a href="#courses">Courses</a></div>
+                <div><a href="#showcase">Showcase</a></div>
+                <div><a href="#contact">Contact</a></div>
+            </div> -->
+            
             
         </div>
         
     </nav>
   </header>
-    <div class="container header__container">
-        <div class="header__left">
-            <h1>Grow your Skills and become World-class</h1>
+    <div class="container row  header__container justify-content-center align-items-center" >
+        <div class="header__left col-lg-6  col-sm-12 text-lg-start -center align-items-center ">
+            <h1 class="display-1 fw-bold">Grow your Skills and become World-class</h1>
             <p>The tech sector provides opportunities for professionals to learn new skills, techniques and methodologies about the industry and emerging technology.</p>
-            <a href="courses.html" class="btn btn-signup">Get Started</a>
-        </div>
-        <div class="header__right">
-            <div class="header__right-image">
-                <img src="./images/bg3.png" alt="">
+            <a href="courses.html" class="btn btn-signup started">Get Started</a>
+        </div> 
+        <div class="header__right col-lg-6  col-sm-12">
+            <div class="header__right-image  ">
+                <img src="./images/bg3.png"  alt="">
             </div>
         </div>
 
@@ -90,7 +120,7 @@
   <section id="courses">
     <h2>Our Courses</h2>
     <div class="courses">
-      <div class="course">
+      <div class="course " >
         
         <div class="course_image"><img src="images/htmlStudents2.webp" alt=""></div>
         <h3>HTML & CSS Basics</h3>
@@ -103,8 +133,8 @@
         <p>Master JavaScript and create interactive websites.</p>
         <button>Enroll Now</button>
       </div>
-      <div class="course">
-        <div class="course_image"><img src="images/students1.webp" alt=""></div>
+      <div class="course" data-aos="fade-up" data-aos-duration="1000">
+        <div class="course_image" ><img src="images/students1.webp " alt="" ></div>
 
         <h3>React for Beginners</h3>
         <p>Dive into React and build dynamic web apps without delay.</p>
@@ -116,7 +146,7 @@
         <p>Dive into React and build dynamic web apps without delay.</p>
         <button>Enroll Now</button>
       </div>
-      <div class="course">
+      <div class="course" data-aos="fade-up" data-aos-duration="1000">
         <div class="course_image"><img src="images/htmlStudents.webp" alt=""></div>
         <h3>React for Beginners</h3>
         <p>Dive into React and build dynamic web apps without delay.</p>
@@ -144,12 +174,12 @@
   </section>
 
 
-  <section id="about">
+  <section id="about" data-aos="zoom-in-up" data-aos-duration="1000">
     <h2>About Us</h2>
     <p>At WebDevPro Training, we empower individuals with the skills to succeed in the tech world. Our experienced instructors provide hands-on training to help you build real-world projects.</p>
   </section>
 
-  <section id="showcase">
+  <section id="showcase" data-aos="slide-right" data-aos-duration="1000">
     <h2>Our Projects</h2>
     <div class="showcase">
       <div class="project">
@@ -184,5 +214,12 @@
   <footer>
     <p>&copy; 2025 WebDevPro Training. All rights reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <!-- AOS LINK BELOW -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
